@@ -1,0 +1,899 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 1em;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --b: #00699e;
+    --g: #282827;
+    --lightG: rgba(0, 0, 0, 0.16);
+    --lightB: rgba(0, 105, 158, 0.1);
+}
+
+input,
+.input-group-text,
+textarea,
+select {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+input,
+.input-group-text,
+textarea,
+select,
+button {
+    outline: hidden;
+}
+
+.section {
+    position: relative;
+}
+
+.section-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+input,
+textarea,
+select {
+    border: 0;
+    border-radius: 0;
+    color: black;
+}
+
+
+/****** Navigation Bar section ******/
+
+nav {
+    margin: 20px auto;
+}
+
+.navbar a {
+    color: var(--g);
+}
+
+.navbar ul {
+    margin-left: 75px;
+}
+
+.navbar li {
+    margin: auto 6px;
+    font-size: .9em;
+}
+
+.dropdown.row {
+    margin: 45px;
+}
+
+.navbar-toggler,
+.navbar li.active>a,
+.navbar .profile,
+.dropdown label,
+.check-circle-outline-icon {
+    color: var(--b);
+}
+
+.navbar li.active>a {
+    font-weight: 700;
+}
+
+.navbar .profile {
+    font-size: .9em;
+}
+
+.navbar .btn {
+    color: var(--b);
+    font-weight: 500;
+    border-radius: 0;
+    box-shadow: 0px 0px 10px var(--lightG);
+    margin: auto 15px;
+    padding: 5px 20px;
+    font-size: .8em;
+}
+
+.dropdown form {
+    width: 100%;
+}
+
+.dropdown p {
+    font-weight: 500
+}
+
+.btn:hover {
+    background: var(--b);
+    color: white
+}
+
+.dropdown .btn {
+    color: white;
+    box-shadow: none;
+    background: var(--b);
+    border: none;
+    border-radius: 0;
+}
+
+.forms {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    background: white;
+    z-index: 999999;
+}
+
+.dropdown h1 {
+    font-weight: 300;
+    margin-top: 29px
+}
+
+.navbar span {
+    cursor: pointer;
+}
+
+.navbar span img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--lightG);
+    margin-right: 13px
+}
+
+.dropdown input {
+    background: var(--lightB);
+}
+
+
+/****** Header section******/
+
+#header {
+    color: white;
+    background-size: cover;
+    background-image: url("../images/header-bg.png");
+    background-position: bottom right;
+    height: calc(100vh - 110px);
+}
+
+#header h1 {
+    font-size: 4em;
+}
+
+#header button {
+    background: var(--b);
+    border-radius: 0;
+    border: none;
+    padding: 14px 32px;
+}
+
+#header video {
+    height: 350px;
+}
+
+
+/****** about section ******/
+
+#about {
+    background: #f1f6f9;
+}
+
+.about-content {
+    height: calc(100vh * 0.7);
+}
+
+#about h6 {
+    font-weight: 900
+}
+
+#about hr {
+    width: 135px;
+    margin-top: 18px;
+    margin-bottom: 42px;
+}
+
+#about button {
+    background: var(--g);
+    padding: 14px 32px;
+}
+
+#partners {
+    background: white;
+    height: calc(100vh * 0.3);
+}
+
+#about button {
+    border-radius: 0;
+    font-weight: 500;
+    border: none;
+}
+
+#about .logo {
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    background: white url("../assets/iclogo.png") no-repeat center center;
+}
+
+#about img {
+    width: 100%;
+}
+
+
+/****** Compaigns section ******/
+
+#compaigns {
+    background: var(--g) url("../images/compaigns-bg.png");
+    background-position: top right;
+    background-size: cover;
+    height: 100vh;
+}
+
+.VueCarousel-slide {
+    padding-right: 7px;
+}
+
+.VueCarousel-dot {
+    width: 18px !important;
+    height: 18px !important;
+    background-color: rgba(255, 255, 255, .5) !important;
+}
+
+.VueCarousel-dot--active {
+    background-color: white !important;
+}
+
+.donation h1 {
+    font-weight: 100;
+    color: var(--g);
+}
+
+.donation p {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: justify;
+}
+
+.donation .donateBtn {
+    top: 0;
+    padding: 10px 15px;
+    color: white;
+    position: absolute;
+    right: 0;
+    background: var(--g);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.donation .progress {
+    background: none !important;
+    transform: translateY(-50%) !important;
+    border-radius: 0 !important
+}
+
+.donation .percent {
+    width: 43px;
+    height: 43px;
+    transform: translate(-50%, -85%);
+    color: white;
+    background: var(--g);
+    position: relative;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+#compaigns .chevron-up-icon,
+#header .chevron-down-icon {
+    color: white
+}
+
+.donation h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.donation .percent span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.donation .progress-bar {
+    background: var(--g) !important;
+}
+
+.donation .imgContainer {
+    position: relative;
+}
+
+.donation .mount {
+    font-weight: 500
+}
+
+.donation .title {
+    font-weight: 700;
+    font-size: .5em;
+}
+
+.donation .imgContainer img {
+    width: 100%;
+}
+
+
+/****** Contact Section ******/
+
+#contact {
+    background: #f2f7fa;
+    height: 100vh;
+}
+
+form label {
+    color: var(--b);
+    font-size: .8em;
+}
+
+#contact h1 {
+    color: var(--b);
+    font-weight: 100;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contact .btn {
+    font-weight: 500;
+    border-radius: 0;
+    background: var(--b);
+    padding: 5px 25px;
+    color: white
+}
+
+#contact form {
+    margin: 50px auto;
+}
+
+
+/****** Footer Section ******/
+
+.footer {
+    margin: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer .social {
+    margin: 12px auto
+}
+
+
+/****** Profile Section ******/
+
+.profile-page {
+    height: calc(100vh - 110px);
+    background: var(--lightB);
+}
+
+.profile-page .edit {
+    background: white;
+    box-shadow: 0 0 15px var(--lightG);
+    padding: 32px;
+}
+
+.profileImg {
+    box-shadow: 0 0 6px var(--lightG);
+    border-radius: 50%;
+}
+
+.profile-page label {
+    /*font-size: 15px;*/
+    color: var(--b);
+}
+
+.profile-page input,
+.profile-page .input-group-text {
+    background: rgba(0, 105, 157, .1);
+    color: var(--g);
+    /*font-size: 20px;*/
+}
+
+.logout {
+    /*font-size: 16px;*/
+    color: var(--b)
+}
+
+.logout img {
+    margin-right: 11px
+}
+
+.profile-page .btn {
+    background: var(--b);
+    border: none;
+    border-radius: 0;
+    /*font-size: 15;*/
+    font-weight: 500;
+    padding: 9px 29px
+}
+
+.transactions {
+    background: white;
+}
+
+.profile-page .transaction {
+    padding: 25px
+}
+
+.profile-page hr {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.profile-page h6 {
+    /*font-size: 15px;*/
+    color: var(--b);
+    font-weight: 400
+}
+
+.profile-page .transaction span:last-child {
+    color: rgba(0, 0, 0, .5)
+}
+
+
+/****** Donation Section ******/
+
+#donation {
+    padding: 20px;
+}
+
+#donation .donation-title {
+    text-align: left;
+    background: white;
+    padding: 30px 20px;
+    margin-bottom: 15px;
+}
+
+p.choose-splite {
+    color: black !important;
+}
+
+.total-donation span:last-child {
+    font-size: .8em
+}
+
+.donation-title span:first-child {
+    font-weight: 700;
+}
+
+.donation-title span:last-child {
+    color: rgba(0, 0, 0, .3);
+    font-weight: 700;
+}
+
+#donation .donation-amount {
+    text-align: center;
+}
+
+#donation .donation-amount div span {
+    background: white;
+    color: rgba(40, 40, 39, 0.25);
+    display: block;
+    padding: 18px;
+    margin: 15px auto;
+}
+
+#donation .donation-amount:last-child div span {
+    color: black;
+    font-weight: 700;
+}
+
+#donation .donation-amount div span.active {
+    font-weight: 700;
+    color: black;
+}
+
+#donation .donation {
+    background: white;
+}
+
+#donation .done h1 {
+    font-weight: 300;
+    font-size: 3.5em;
+}
+
+#donation .done {
+    margin-top: 100px;
+}
+
+#donation .social {
+    margin-top: 100px;
+}
+
+#donation .social p {
+    font-size: .7em;
+}
+
+.total-donation hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.check {
+    display: block;
+    font-size: 1em;
+    color: black;
+    padding-left: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+}
+
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+}
+
+.check input:checked~.checkmark,
+.check input:checked~.radiomark {
+    background-color: white;
+}
+
+.checkmark:after,
+.radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked~.checkmark:after,
+.check input:checked~.radiomark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    left: 8px;
+    top: 0px;
+    width: 10px;
+    height: 17px;
+    border: solid #00699e;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check .radiomark:after {
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--b);
+}
+
+#donation label:not(.check) {
+    color: #00699e;
+}
+
+#donation {
+    background: rgba(0, 105, 158, 0.05);
+}
+
+.list-group-item {
+    border: 1px solid #00699e;
+    border-radius: 0 !important;
+    padding: 20px 0 !important;
+    font-weight: 500;
+    color: var(--b);
+}
+
+.list-group-item.active {
+    background: #00699e !important;
+    color: white;
+    border-color: transparent !important;
+}
+
+.list-group-item.active::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-top: 10px solid #00699e;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.arrow-left-icon {
+    color: #00699e;
+    margin: 30px auto
+}
+
+#donation p {
+    margin-top: -20px;
+    color: #00699e;
+}
+
+#donation .btn {
+    background: #00699e;
+    color: white;
+    border-radius: 0;
+}
+
+#donation .btn:hover {
+    color: #00699e;
+    background: white;
+    border: 1px solid #00699e;
+}
+
+#donation .step-content form {
+    padding: 30px 50px 0 50px;
+}
+
+#donation form select {
+    height: 80px;
+}
+
+#donation .gift p,
+#donation .social p {
+    margin: 20px auto;
+    color: black !important;
+}
+
+#donation .social img {
+    margin: auto 10px;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+#donation .gift p {
+    text-align: justify;
+}
+
+#donation .gift h1,
+#donation .gift h6 {
+    text-align: center;
+}
+
+#donation .gift h1 {
+    font-weight: 300;
+}
+
+#donation .gift h1,
+#donation .gift p~h6,
+#donation .gift h6 span {
+    color: var(--b) !important;
+}
+
+.donate-section p {
+    text-align: center !important;
+}
+
+.donate-section select {
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
+    -webkit-appearance: none;
+    background-position-x: calc(100% - 20px);
+}
+
+.donate-section .payment-selection label {
+    font-size: .8em
+}
+
+.donate-section h6 {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+/****** icons Section ******/
+
+.chevron-down-icon,
+.chevron-up-icon {
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.information-outline-icon {
+    display: none;
+}
+
+.chevron-up-icon {
+    color: var(--b);
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (min-width:992px) {
+    .close-icon,
+    .forms h3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar ul {
+        margin-top: 15px;
+        margin-left: initial;
+        text-align: center
+    }
+    .navbar li {
+        border-bottom: 1px solid rgba(0, 105, 157, .1);
+        padding: 8px 0;
+    }
+    .navbar li:last-child {
+        border-bottom: none;
+    }
+    #header {
+        text-align: center;
+    }
+    #header button {
+        margin-bottom: 15px;
+    }
+    #about {
+        text-align: center;
+    }
+    #about .logo {
+        margin: 0 auto 15px;
+    }
+    #about button {
+        margin-top: 15px;
+    }
+    #compaigns {
+        text-align: center;
+    }
+    #header video {
+        height: 250px
+    }
+    .section,
+    .about-content,
+    .partners {
+        height: initial !important;
+        position: static !important;
+        padding: 15px 0
+    }
+    .section-content {
+        position: static !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
+    .edit,
+    .transactions {
+        margin: 25px auto !important;
+    }
+    .chevron-down-icon,
+    .chevron-up-icon {
+        position: static;
+    }
+    .dropdown.row {
+        margin: 0;
+    }
+    .forms {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 45px;
+    }
+    .forms-content {
+        background: white;
+        padding: 30px;
+        margin-top: 15px;
+    }
+    .close-icon {
+        color: white;
+        border-radius: 50%;
+    }
+    .navbar .btn {
+        box-shadow: none;
+        color: white;
+        font-size: 1.05em;
+        font-weight: 300;
+        padding: 10px;
+    }
+    .navbar .btns-group {
+        background: var(--b);
+    }
+    .navbar .clearfix {
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    .steps {
+        font-size: .8em;
+    }
+    .done,
+    .social {
+        margin-top: 0px !important;
+    }
+    #donation .donation {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+    }
+    .information-outline-icon {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: rgb(0, 105, 158);
+        border-radius: 50%;
+        padding: 2px;
+        z-index: 99999;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #partners img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-height: 700px) {
+    .section:not(#partners) {
+        min-height: 750px !important
+    }
+    #partners {
+        min-height: 200px !important
+    }
+}
